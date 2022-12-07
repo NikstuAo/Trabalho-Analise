@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: black;
+            overflow:hidden;   
+        }
+        #wrapper{
+            width: 98.5vw;
+            height:100vh;
+            overflow:hidden;   
+        }
+        #header{
+            width:100%;
+            height:40%;
+            background-image: url(rodolfo.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: top;
+        }
+        #content{
+            width:100%;
+            height:60%;
+        }
+        #timern{
+            color:white;
+            float: right;
+            margin-right: 1%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #title{
+            width:100%;
+            height:20%;
+        }
+        #titletext{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 400%;
+            color:white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="time">
+            <p id="timern"></p>
+        </div>
+        <div id="header">
+        </div>
+        <div id="content">
+            <div id="title">
+                <p id="titletext">Rodolfinhogamer12</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var data = "";
+        dayName = new Array ("domingo-feira", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado-feira")
+        Juan = new Array ("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+        setInterval (atualiza, 500)
+        function atualiza(){
+        now = new Date
+        data = dayName[now.getDay()] + ", " + now.getDate() + " de " + Juan[now.getMonth()] + " de " + now.getFullYear() + "<br>" + now.getHours() + ":" +now.getMinutes();
+        document.getElementById("timern").innerHTML = data; 
+        }
+    </script>
+</body>
+</html>
