@@ -1,13 +1,9 @@
-import logo from './assets/logo.svg';
 import './App.css';
 
 function App() {
   return (
     <body>
       <div id="wrapper">
-        <div id="time">
-          <p id="timern"></p>
-        </div>
         <div id="header">
         </div>
         <div id="content">
