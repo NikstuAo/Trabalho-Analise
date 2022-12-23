@@ -2,7 +2,9 @@ import './DateUpdater.css';
 
 function DateUpdater() {
     var date = "";
+    // eslint-disable-next-line no-array-constructor
     var dayName = new Array("domingo-feira", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado-feira")
+    // eslint-disable-next-line no-array-constructor
     var month = new Array("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
     setInterval(DateUpdater, 500)
     var now = new Date();
