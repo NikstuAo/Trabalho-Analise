@@ -1,0 +1,8 @@
+#timer{
+    float: right;
+  }
+
+#timer-now {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}

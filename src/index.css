@@ -5,10 +5,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(0, 0, 0);
 }
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
 
-html {
-  background-color: rgb(0, 0, 0);
-  overflow: hidden;
+a :hover{
+  transition: 0.5s;
+  opacity: 0.7;
+  text-decoration-color: #6d4aff;
+}
+
+#login-container {
+  padding-left: 20%;
+}
+
+#register-container {
+  padding-left: 1%;
+  
 }
 
 #wrapper {
@@ -20,7 +34,7 @@ html {
 #wallpaper {
   width: 100%;
   height: 35%;
-  background-image: url(/src/assets/animewallpaper.png);
+  background-image: url(./assets/animewallpaper.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -31,40 +45,30 @@ html {
   height: 65%;
 }
 
-
-#title {
-  width: 100%;
-  height: 20%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-#titletext {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 400%;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: 0px;
+#header {
+  padding-bottom: 0.7%;
+  padding-top: 0.3%;
 }
 
 #addbar {
   width: 100%;
   height: 20%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
-#addser {
+#add-anime-btn {
   width: 10%;
   height: 50%;
   border-radius: 50px;
   background-color: #6d4aff;
   font-size: 100%;
   font-family: 'Hanken Grotesk', sans-serif;
+  color: aliceblue;
+}
+
+#add-anime-btn :hover{
+  background-color: #000000;
+  transition: 0.5s;
+  opacity: 0.7;
 }
 
 #addedser {
